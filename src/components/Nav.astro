@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../assets/images/Logo1.png";
+---
+
+<nav class="flex items-center justify-between w-full py-4 px-4 md:px-8 fixed top-0 z-20 backdrop-blur-sm">
+  <a href="/">
+    <div class="flex items-center">
+      <Image src={Logo} alt="Telegraphik Logo" class="h-8 w-8"/>
+    </div>
+  </a>
+  <div class="flex items-center justify-right h-8">
+    <a class="" href="mailto:craig@telegraphik.studio">
+      <p class="font-[100] text-[12px] text-white">craig@telegraphik.studio</p>
+    </a>
+  </div>
+</nav>

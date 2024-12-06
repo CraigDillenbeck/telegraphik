@@ -1,16 +1,18 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<div class="mx-4 md:mx-8 md:grid min-h-screen md:content-center">
+		<h1 class="-rotate-90 translate-y-[4.7em] -translate-x-[1.3em] md:-translate-x-0 md:rotate-0 md:translate-y-0 [font-size:_clamp(2vh,13vh,8em)] md:[font-size:_clamp(2vw,14.8vw,16em)] md:text-center font-semibold tracking-[-.03em]">
+			<span class="font-outline-2">TELE</span><span class="text-white">GRAPHIK</span>
+		</h1>
+		<div class="font-[100] text-white text-[12px] grid place-items-end self-end">
+			<p>A <span class="font-bold">WEBSITE DESIGN</span> AND</p>
+			<p class="font-bold">DEVELOPMENT</p>
+			<p class="font-bold">STUDIO</p>
+		</div>
+	</div>
+
+	<div class="mx-4 md:mx-8 min-h-screen"></div>
+</BaseLayout>

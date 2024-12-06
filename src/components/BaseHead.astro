@@ -1,0 +1,38 @@
+---
+import client from "../data/client.json";
+import '../styles/main.css';
+---
+
+<head>
+	<!-- Built by Craig Dillenbeck -->
+  <!-- Telegraphik.studio -->
+
+	<!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- Standard meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content={client.description}>
+	<meta name="keywords" content="">
+	<link rel="canonical" href={client.domain}>
+
+	<!--Social Media Display-->
+	<meta property="og:title" content={client.title} />
+	<meta property="og:description" content={client.description} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={client.domain} />
+	<meta property="og:image" content="/src/assets/images/Logo.png" />
+	<meta property="og:image:secure_url" content="/src/assets/images/Logo.png" />
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicons/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicons/favicon-16.png">
+
+	<meta name="generator" content={Astro.generator} />
+	<title>{client.title}</title>
+</head>
